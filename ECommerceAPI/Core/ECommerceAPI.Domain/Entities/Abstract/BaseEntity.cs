@@ -10,9 +10,6 @@ namespace ECommerceAPI.Domain.Entities.Abstract
     {
         public Guid Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public BaseEntity()
-        {
-            CreatedDate = DateTime.Now;
-        }
+        public DateTime UpdatedDate { get; set; }
     }
 }

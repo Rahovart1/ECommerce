@@ -27,7 +27,7 @@ namespace ECommerceAPI.Persistence.Repositories
             EntityEntry<T> entityEntry  = await Table.AddAsync(entity);
             return entityEntry.State == EntityState.Added;
         }
-        public async Task<bool> AddAsync(List<T> entities)
+        public async Task<bool> AddRangeAsync(List<T> entities)
         {
             await Table.AddRangeAsync(entities);
             return true;
@@ -38,7 +38,7 @@ namespace ECommerceAPI.Persistence.Repositories
             return entityEntry.State == EntityState.Deleted;
 
         } 
-        public bool Remove(List<T> entities)
+        public bool RemoveRange(List<T> entities)
         {
             Table.RemoveRange(entities);
             return true;
@@ -54,7 +54,7 @@ namespace ECommerceAPI.Persistence.Repositories
             EntityEntry entityEntry = Table.Update(entity);
             return entityEntry.State == EntityState.Modified;
         }
-        public async Task<int> SaveAsync(T entity) => await _context.SaveChangesAsync();
+        public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
 
     }
 }

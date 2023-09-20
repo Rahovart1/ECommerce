@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Infrastructure",
+    "\\Infrastructure\\ECommerce.Persistence",
+    "\\Infrastructure\\ECommerce.Persistence\\Repositories",
+    "\\Presentation",
+    "\\Presentation\\ECommerceAPI.API",
+    "\\Presentation\\ECommerceAPI.API\\Controllers"
+  ],
+  "SelectedNode": "\\Infrastructure\\ECommerce.Persistence",
+  "PreviewInSolutionExplorer": false
+}
